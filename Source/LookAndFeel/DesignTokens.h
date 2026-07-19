@@ -16,11 +16,6 @@
 namespace HuhTokens
 {
     //==============================================================================
-    // Window
-    constexpr int windowWidth  = 1032;
-    constexpr int windowHeight = 349;
-
-    //==============================================================================
     // Colours (hex values taken verbatim from delay_ui.svg fill/stroke attrs)
     namespace Colour
     {
@@ -78,6 +73,10 @@ namespace HuhTokens
     // Layout constants (px, measured directly against the 1032x349 reference)
     namespace Layout
     {
+        // Window
+        constexpr int windowWidth  = 1032;
+        constexpr int windowHeight = 349;
+
         constexpr float cornerRadiusOuter = 8.0f;
         constexpr float cornerRadiusPanel = 7.5f;
 

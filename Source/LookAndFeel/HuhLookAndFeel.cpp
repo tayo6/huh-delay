@@ -57,7 +57,7 @@ void HuhLookAndFeel::drawRotarySlider (juce::Graphics& g, int x, int y, int widt
         // Indicator tick
         juce::Path tick;
         tick.startNewSubPath (0.0f, -radius * 0.15f);
-        tick.lineToXY (0.0f, -radius * 0.75f);
+        tick.lineTo (0.0f, -radius * 0.75f);
         tick.applyTransform (juce::AffineTransform::rotation (angle).translated (centre));
         g.setColour (Colour::textForestGreen);
         g.strokePath (tick, juce::PathStrokeType (2.0f, juce::PathStrokeType::curved, juce::PathStrokeType::rounded));
@@ -87,7 +87,7 @@ void HuhLookAndFeel::drawRotarySlider (juce::Graphics& g, int x, int y, int widt
         juce::Path indicator;
         const float lineLen = faceBounds.getWidth() * 0.34f;
         indicator.startNewSubPath (-lineLen, 0.0f);
-        indicator.lineToXY (lineLen, 0.0f);
+        indicator.lineTo (lineLen, 0.0f);
         indicator.applyTransform (juce::AffineTransform::rotation (angle).translated (centre));
         g.setColour (Colour::outerFrame);
         g.strokePath (indicator, juce::PathStrokeType (radius * 0.11f, juce::PathStrokeType::curved, juce::PathStrokeType::rounded));
